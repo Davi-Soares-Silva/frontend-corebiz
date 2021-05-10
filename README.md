@@ -1,6 +1,7 @@
 # Teste Frontend - Corebiz
 
 Projeto desenvolvido em um processo seletivo da empresa Corebiz.
+Desenvolvido utilizando React, Redux e Styled Components.
 
 ## 🚀 Começando
 
