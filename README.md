@@ -4,7 +4,7 @@ Projeto desenvolvido em um processo seletivo da empresa Corebiz.
 
 ## 🚀 Começando
 
-Essas instruções permitirão 
+Essas instruções permitirão que você clone e execute o projeto em sua máquina local.
 
 ### 📋 Pré-requisitos
 
