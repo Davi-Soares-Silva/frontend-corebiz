@@ -19,7 +19,7 @@ const Global = createGlobalStyle`
 
   .container {
     width: 100vw;
-    max-width: 1200px;
+    max-width: 1248px;
   }
 
   @media(max-width: 800px) {
@@ -31,8 +31,16 @@ const Global = createGlobalStyle`
 
 export const colors = {
   gray: "#7a7a7a",
+  hoverGray: "#E6E8EA",
+  lightGray: "#BDBDBD",
+  mediumGray: "#C0C0C0",
+  newsGray: "#F2F2F2",
+  darkGray: "#585858",
+  errorGray: "#333333",
   white: '#FFFFFF',
   red: '#F8475F',
+  errorRed: "#D7182A",
+  black: "#000000",
 }
 
 

@@ -9,8 +9,13 @@ import logo from '../../assets/logo.svg';
 import imgMagnifyingGlasses from '../../assets/magnifying-glass.svg'
 import imgShoppingCart from '../../assets/shopping-cart.svg'
 import imgUser from '../../assets/user.svg'
+import { useSelector } from 'react-redux';
+import { useEffect } from 'react';
 
 function Header() {
+
+  const { cart } = useSelector((state) => state.product);
+
   return (
     <Container className="container">
       <LogoContainer>
@@ -25,14 +30,14 @@ function Header() {
       <ClientInfoContainer>
         <div id="my-account">
           <button>
-            <img src={imgUser} alt="" />
+            <img src={imgUser} alt="Usuário" />
             <span>Minha Conta</span>
           </button>
         </div>
         <div>
           <button>
-            <img src={imgShoppingCart} alt="" />
-            <span>5</span>
+            <img src={imgShoppingCart} alt="Cart" />
+            <span>{cart || 0}</span>
           </button>
         </div>
       </ClientInfoContainer>

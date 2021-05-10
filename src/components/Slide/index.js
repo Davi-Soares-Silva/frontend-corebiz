@@ -1,18 +1,21 @@
-import { Container, Banner, InformationContainer, ImageContainer } from './style';
-
-import imgHandBanner from '../../assets/hand-banner.png';
+import {
+  Container,
+  Banner,
+  InformationContainer,
+  SliderInfo,
+} from './style';
 
 function Slider() {
   return (
     <Container>
       <Banner>
-        <InformationContainer>
-          <p>Olá, o que você está buscando?</p>
-          <h2>Criar ou Migrar seu ecommerce?</h2>
-        </InformationContainer>
-        <ImageContainer>
-          <img src={imgHandBanner} alt="banner" />
-        </ImageContainer>
+        <InformationContainer />
+        <SliderInfo>
+          <div className="selected" />
+          <div />
+          <div />
+          <div />
+        </SliderInfo>
       </Banner>
     </Container>
   )

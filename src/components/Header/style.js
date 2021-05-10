@@ -9,6 +9,7 @@ export const Container = styled.nav`
 `;
 
 export const LogoContainer = styled.div`
+  grid-area: 'logo';
   flex: 0.5;
   display: flex;
   align-items: center;
@@ -54,6 +55,7 @@ export const ClientInfoContainer = styled.div`
   flex: 0.8;
 
   #my-account{
+    grid-area: "cart";
     justify-content: center;
     flex: 1;
 
@@ -96,8 +98,6 @@ export const ClientInfoContainer = styled.div`
         color: ${colors.white};
       }
     }
-    /* img {
-      margin-right: 10px;
-    } */
   }
 `;
+

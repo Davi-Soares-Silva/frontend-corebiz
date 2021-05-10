@@ -9,11 +9,11 @@ export const Container = styled.div`
   display: flex;
   max-width: 1920px;
   justify-content: center;
-  /* background: red; */
   height: 430px;
 `;
 
 export const Banner = styled.div`
+  position: relative;
   display: flex;
   width: inherit;
   height: inherit;
@@ -24,12 +24,12 @@ export const InformationContainer = styled.div`
   flex: 1;
   position: relative;
   background-image: url(${backgroundBanner});
+  background-position: center;  
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background: black; */
 
   p, h2 {
     color: ${colors.white}
@@ -37,12 +37,23 @@ export const InformationContainer = styled.div`
 
 `;
 
-export const ImageContainer = styled.div`
-  flex: 1;
-  background-color: #ccc;
+export const SliderInfo = styled.div`
+  position: absolute;
+  bottom: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
 
-  img {
-    width: 100%;
-    height: 100%;
+  .selected{
+    background: ${colors.red};
+  }
+
+  div{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: ${colors.lightGray};
+    cursor: pointer;
   }
 `;
